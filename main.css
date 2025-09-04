@@ -225,22 +225,46 @@
 /* typography */
 
 @font-face {
-	font-family: ;
-	src: url();
+	font-family: "OT Bulb Monoline 500";
+	src: url(assets/fonts/OTBulbMonoline-500.woff2);
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Berkeley Mono Variable Regular";
+	src: url(assets/fonts/BerkeleyMonoVariable-Regular.woff2);
+}
+
+@font-face {
+	font-family: "Berkeley Mono Variable Italic";
+	src: url(assets/fonts/BerkeleyMonoVariable-Italic.woff2);
 }
 
 /* variables */
 
 /* styles */
 body {
-	padding: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	padding: clamp(0.5rem, 50%, 2rem);
+	display: grid;
+	gap: 1rem;
 }
 h1 {
-	text-align: left;
+	font-family: "OT Bulb Monoline 500", system-ui;
+}
+main {
+	font-family: "Berkeley Mono Variable Regular", system-ui;
+	align-content: center;
+}
+p {
+	padding-block-start: 1rem;
+	width: clamp(45ch, 50%, 75ch);
 }
 img {
 	margin: 1rem 0;
+}
+summary {
+	margin-block-start: 1rem;
+	padding: 1rem 0;
+	font-size: 2rem;
 }
