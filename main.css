@@ -305,7 +305,7 @@ summary {
 	color: var(--c-green);
 }
 .project-intro {
-    padding: 1rem 0;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -317,6 +317,11 @@ summary {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    border-block-start: 1px solid var(--c-light);
+}
+.research-archive {
+    padding: 1rem;
+    border-block-start: 1px solid var(--c-light);
 }
 footer {
     text-align: center;
