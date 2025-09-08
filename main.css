@@ -325,12 +325,26 @@ summary {
 .links {
     padding: 1rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
     & a:hover {
         color: var(--c-green);
     }
+}
+.links-title {
+    color: var(--c-green);
+    padding: 0.5rem;
+    border: 1px dashed var(--c-green);
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+.css, .wordpress {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
 }
 .visual-inspiration {
     padding: 1rem;
@@ -343,7 +357,7 @@ summary {
     max-width: 500px;
     margin: 0;
     &:hover {
-        border: 1px solid var(--c-green);
+        border: 1px dashed var(--c-green);
     }
 }
 footer {
