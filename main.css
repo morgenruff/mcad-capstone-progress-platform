@@ -323,17 +323,20 @@ summary {
     border-block-start: 1px solid var(--c-light);
 }
 .links {
+    padding: 1rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 1rem;
     & a:hover {
         color: var(--c-green);
     }
 }
 .visual-inspiration {
-    padding: 1rem 0;
+    padding: 1rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 1rem;
 }
 .visual-inspiration img {
