@@ -256,7 +256,6 @@
 htmL {
     background-image: url(assets/black-orchid.png);
     background-color: var(--c-dark);
-    /*background: radial-gradient(at center, var(--c-dark), var(--c-green));*/
 }
 body {
     padding: clamp(0.5rem, 50%, 2rem);
@@ -322,6 +321,27 @@ summary {
 .research-archive {
     padding: 1rem;
     border-block-start: 1px solid var(--c-light);
+}
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    & a:hover {
+        color: var(--c-green);
+    }
+}
+.visual-inspiration {
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+.visual-inspiration img {
+    max-width: 500px;
+    margin: 0;
+    &:hover {
+        border: 1px solid var(--c-green);
+    }
 }
 footer {
     text-align: center;
