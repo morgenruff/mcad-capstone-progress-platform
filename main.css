@@ -348,6 +348,7 @@ summary {
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
+	gap: 1rem;
 	& a:hover {
 		color: var(--c-green);
 	}
@@ -360,12 +361,16 @@ summary {
 	width: fit-content;
 }
 .css,
-.wordpress {
+.wordpress,
+.accessibility,
+.design {
 	display: flex;
 	flex-flow: row wrap;
 	padding: 1rem;
 	gap: 1rem;
 	align-items: center;
+	border: 1px solid var(--c-light);
+	border-radius: 0.5rem;
 }
 .visual-inspiration {
 	padding: 1rem;
