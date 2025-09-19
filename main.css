@@ -244,21 +244,21 @@
 /* variables */
 
 :root {
-    --c-green: oklch(0.6944 0.1603 166.72);
-    --c-dark: oklch(0.1751 0.0406 34.49);
-    --c-light: oklch(0.9422 0.0418 93.66);
-    --t-bulb: "OT Bulb Monoline 500", system-ui;
-    --t-berk-reg: "Berkeley Mono Variable Regular", system-ui;
-    --t-berg-ital: "Berkeley Mono Variable Italic", system-ui;
+	--c-green: oklch(0.6944 0.1603 166.72);
+	--c-dark: oklch(0.1751 0.0406 34.49);
+	--c-light: oklch(0.9422 0.0418 93.66);
+	--t-bulb: "OT Bulb Monoline 500", system-ui;
+	--t-berk-reg: "Berkeley Mono Variable Regular", system-ui;
+	--t-berg-ital: "Berkeley Mono Variable Italic", system-ui;
 }
 
 /* styles */
 htmL {
-    background-image: url(assets/black-orchid.png);
-    background-color: var(--c-dark);
+	background-image: url(assets/black-orchid.png);
+	background-color: var(--c-dark);
 }
 body {
-    padding: clamp(0.5rem, 50%, 2rem);
+	padding: clamp(0.5rem, 50%, 2rem);
 	/*display: flex;
 	flex-direction: column;
 	align-items: center;*/
@@ -266,9 +266,9 @@ body {
 	color: var(--c-light);
 }
 header {
-    text-align: center;
-    padding: 1rem 0;
-    border-block-end: 1px solid var(--c-light);
+	text-align: center;
+	padding: 1rem 0;
+	border-block-end: 1px solid var(--c-light);
 }
 h1 {
 	font-family: var(--t-bulb);
@@ -276,7 +276,7 @@ h1 {
 	text-align: center;
 }
 h2 {
-    color: var(--c-green);
+	color: var(--c-green);
 	text-align: center;
 }
 main {
@@ -291,77 +291,98 @@ img {
 	border-radius: 1rem;
 }
 details {
-    border: 1px dashed var(--c-green);
-    border-radius: 1.5rem;
-    padding: 1rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
+	border: 1px dashed var(--c-green);
+	border-radius: 1.5rem;
+	padding: 1rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5rem;
 }
 summary {
 	font-size: 1.5rem;
 	color: var(--c-green);
 }
 .project-intro {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
 }
 .weekly-summaries {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    border-block-start: 1px solid var(--c-light);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+	border-block-start: 1px solid var(--c-light);
+}
+.todo {
+	border-block-start: 1px solid var(--c-light);
+	padding: 1rem;
+	> ul {
+		padding: 1rem 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: center;
+		> li {
+			width: 100%;
+			padding: 1rem;
+			border: 1px dashed var(--c-green);
+			border-radius: 0.5rem;
+			> span {
+				color: var(--c-green);
+			}
+		}
+	}
 }
 .research-archive {
-    padding: 1rem;
-    border-block-start: 1px solid var(--c-light);
+	padding: 1rem;
+	border-block-start: 1px solid var(--c-light);
 }
 .links {
-    padding: 1rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    & a:hover {
-        color: var(--c-green);
-    }
+	padding: 1rem;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	& a:hover {
+		color: var(--c-green);
+	}
 }
 .links-title {
-    color: var(--c-green);
-    padding: 0.5rem;
-    border: 1px dashed var(--c-green);
-    border-radius: 0.5rem;
-    width: fit-content;
+	color: var(--c-green);
+	padding: 0.5rem;
+	border: 1px dashed var(--c-green);
+	border-radius: 0.5rem;
+	width: fit-content;
 }
-.css, .wordpress {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 1rem;
-    gap: 1rem;
-    align-items: center;
+.css,
+.wordpress {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 1rem;
+	gap: 1rem;
+	align-items: center;
 }
 .visual-inspiration {
-    padding: 1rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 1rem;
 }
 .visual-inspiration img {
-    max-width: 500px;
-    margin: 0;
-    &:hover {
-        border: 1px dashed var(--c-green);
-    }
+	max-width: 500px;
+	margin: 0;
+	&:hover {
+		border: 1px dashed var(--c-green);
+	}
 }
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    border-block-start: 1px solid var(--c-light);
+	text-align: center;
+	padding: 1rem 0;
+	border-block-start: 1px solid var(--c-light);
 }
