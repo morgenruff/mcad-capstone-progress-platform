@@ -303,6 +303,22 @@ summary {
 	font-size: 1.5rem;
 	color: var(--c-green);
 }
+.anchor-links {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+}
+.anchor-links ul {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	gap: 1rem;
+	color: var(--c-light);
+	font-family: var(--t-berk-reg);
+	& a:hover {
+		color: var(--c-green);
+	}
+}
 .project-intro {
 	padding: 1rem;
 	display: flex;
@@ -346,8 +362,6 @@ summary {
 	padding: 1rem;
 	display: flex;
 	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
 	gap: 1rem;
 	& a:hover {
 		color: var(--c-green);
@@ -360,16 +374,13 @@ summary {
 	border-radius: 0.5rem;
 	width: fit-content;
 }
-.css,
-.wordpress,
-.accessibility,
-.design {
+.category {
 	display: flex;
 	flex-flow: row wrap;
 	padding: 1rem;
 	gap: 1rem;
 	align-items: center;
-	border: 1px solid var(--c-light);
+	border: 1px solid var(--c-green);
 	border-radius: 0.5rem;
 }
 .visual-inspiration {
