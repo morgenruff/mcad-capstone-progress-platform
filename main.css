@@ -333,6 +333,15 @@ summary {
 	gap: 1rem;
 	align-items: center;
 	border-block-start: 1px solid var(--c-light);
+	& ul {
+		padding-block-start: 1rem;
+		& li {
+			padding: 0.5rem 0;
+			& span {
+				color: var(--c-green);
+			}
+		}
+	}
 }
 .todo {
 	border-block-start: 1px solid var(--c-light);
