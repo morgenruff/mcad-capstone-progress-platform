@@ -124,7 +124,7 @@
 }
 
 :where(ul, ol) {
-	list-style: none;
+	list-style: square inside;
 }
 
 :where(img, svg, video, canvas, audio, iframe, embed, object) {
@@ -279,6 +279,11 @@ h2 {
 	color: var(--c-green);
 	text-align: center;
 }
+h3 {
+	color: var(--c-green);
+	padding-block-start: 1rem;
+	padding-block-end: 0.25rem;
+}
 main {
 	font-family: var(--t-berk-reg);
 	align-content: center;
@@ -302,6 +307,9 @@ details {
 summary {
 	font-size: 1.5rem;
 	color: var(--c-green);
+	&::marker {
+		content: "+ ";
+	}
 }
 .anchor-links {
 	padding: 1rem;
@@ -333,8 +341,11 @@ summary {
 	gap: 1rem;
 	align-items: center;
 	border-block-start: 1px solid var(--c-light);
-	& ul {
+	& p {
 		padding-block-start: 1rem;
+	}
+	& ul {
+		padding-block-start: 0.25rem;
 		& li {
 			padding: 0.5rem 0;
 			& span {
